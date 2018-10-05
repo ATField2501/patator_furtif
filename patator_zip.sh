@@ -13,8 +13,8 @@ then
     exit
 else
     echo "******* Caglio-Script ********"
-    echo " patator ftp/ proxychains     "
+    echo "        patator zip     "
 
-proxychains python $chemin_vers_patator ftp_login host=$1 user=FILE0 0=$chemin_vers_dico password=asdf -x ignore:mesg='Login incorrect.' -x ignore,reset,retry:code=500
+proxychains python $chemin_vers_patator unzip_pass zipfile=$1 password=FILE0 0=$chemin_vers_dico -x ignore:code!=0
 
 fi
