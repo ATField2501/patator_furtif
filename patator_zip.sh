@@ -15,6 +15,6 @@ else
     echo "******* Caglio-Script ********"
     echo "        patator zip     "
 
-proxychains python $chemin_vers_patator unzip_pass zipfile=$1 password=FILE0 0=$chemin_vers_dico -x ignore:code!=0
+python $chemin_vers_patator unzip_pass zipfile=$1 password=FILE0 0=$chemin_vers_dico -x ignore:code!=0
 
 fi
